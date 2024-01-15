@@ -1,0 +1,44 @@
+! Title: Geoguessr Cosmetic Tweaks
+! Description: Subjective tweaks to the UI
+! Expires: 4 days (update frequency)
+! Version: 15 January 2024
+
+
+# -- Main -- #
+# No dark background on left side
+www.geoguessr.com##div[class*="maprunner-signed-in-start-page_backgroundWrapper__"]
+
+# No italics where it's not needed
+www.geoguessr.com##a:style(font-style: normal !important)
+www.geoguessr.com##button:style(font-style: normal !important)
+www.geoguessr.com##h1:style(font-style: normal !important)
+www.geoguessr.com##h2:style(font-style: normal !important)
+www.geoguessr.com##h3:style(font-style: normal !important)
+www.geoguessr.com##h4:style(font-style: normal !important)
+www.geoguessr.com##p:style(font-style: normal !important)
+www.geoguessr.com##[class*="label"], [class*="Label"]:style(font-style: normal !important)
+www.geoguessr.com##[class*="status"]:style(font-style: normal !important)
+www.geoguessr.com##[class*="xp-progress-bar_"]:style(font-style: normal !important)
+
+# No /slant/ where it's not needed
+www.geoguessr.com##[class*="map-card"]:style(font-style: normal !important; transform: none !important)
+www.geoguessr.com##[class*="map-card"] > *:style(transform: none !important)
+www.geoguessr.com##[class*='pop-out-main-menu']:style(transform: none !important)
+www.geoguessr.com##[class*='pop-out-main-menu_wrapper__']:style(transform: none !important)
+www.geoguessr.com##div[class*='slanted']:style(transform: none !important)
+www.geoguessr.com##div[class*='slanted']::before:style(transform: none !important)
+www.geoguessr.com##[class*='slanted-wrapper_variantGrayTransparent']:style(--variant-background-color: none !important)
+
+# Buttons no glint
+www.geoguessr.com##[class*="button"]:style(background-image: none !important)
+
+# Ongoing games: better list
+www.geoguessr.com##[class*="current_gameListItem"]:style(border-top: unset !important; border-radius: 0.5rem !important; background: #0f0d0c59 !important; margin-top: 1rem !important; padding: 0.75rem 0 0.75rem 0 !important)
+
+
+# -- In-game -- #
+# New compass less obtrusive background
+www.geoguessr.com##[class*="compassContainer"]:style(background-color: var(--ds-color-black-30) !important)
+
+# Map status bar less obtrusive shadow
+www.geoguessr.com##[class*="slanted-wrapper_withShadow"]:style(--variant-filter: drop-shadow(0 0.3rem 0.4rem rgba(0,0,0,.4)) !important)
