@@ -1,7 +1,7 @@
 ! Title: Geoguessr Debloat
 ! Description: Must-have filters to clean up the bloat
 ! Expires: 4 days (update frequency)
-! Version: 15 January 2024
+! Version: 29 January 2024
 
 
 # -- Main -- #
@@ -11,8 +11,8 @@ www.geoguessr.com##[class*="promo"]
 # No "Free" tag
 www.geoguessr.com##[class*="primary-menu_tagWrapper__"]
 
-# No start page map runner
-www.geoguessr.com##[class*="maprunner-signed-in-start-page_avatar__"]
+# No start page avatar
+www.geoguessr.com##[class*="signed-in-start-page_avatar__"]
 
 # No Geoguessr logo
 www.geoguessr.com##img[alt="GeoGuessr"]

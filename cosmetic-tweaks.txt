@@ -1,12 +1,12 @@
 ! Title: Geoguessr Cosmetic Tweaks
 ! Description: Subjective tweaks to the UI
 ! Expires: 4 days (update frequency)
-! Version: 15 January 2024
+! Version: 29 January 2024
 
 
 # -- Main -- #
 # No dark background on left side
-www.geoguessr.com##div[class*="maprunner-signed-in-start-page_backgroundWrapper__"]
+www.geoguessr.com##div[class*="signed-in-start-page_backgroundWrapper__"]
 
 # No italics where it's not needed
 www.geoguessr.com##a:style(font-style: normal !important)
