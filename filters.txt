@@ -1,0 +1,91 @@
+! Title: Alien's Geoguessr Filters
+! Description: Stuff I use to make the game look more pleasant.
+! Expires: 4 days (update frequency)
+! Version: 27 April 2024
+
+
+! More readable font
+www.geoguessr.com##*:style(font-weight: 400 !important)
+
+! Underline links on hover
+www.geoguessr.com##a:hover:style(text-decoration: underline !important)
+
+! No italics
+www.geoguessr.com##*:style(font-style: normal !important)
+
+! No slant
+www.geoguessr.com##div[class*="slanted"]:style(transform: none !important)
+www.geoguessr.com##div[class*="slanted"]::before:style(transform: none !important)
+
+! No slant on main menu pop out
+www.geoguessr.com##[class*="pop-out-main-menu"]:style(transform: none !important)
+www.geoguessr.com##[class*="pop-out-main-menu_wrapper__"]:style(transform: none !important)
+
+! No slant on map creator
+www.geoguessr.com##[class*="map-card"]:style(font-style: normal !important; transform: none !important)
+www.geoguessr.com##[class*="map-card"] > *:style(transform: none !important)
+
+! Transparent navigation buttons
+www.geoguessr.com##[class*="slanted-wrapper_variantGrayTransparent"]:style(--variant-background-color: none !important)
+
+! No loading animation
+www.geoguessr.com##[class*="fullscreen-spinner"]
+
+! No glint on buttons
+www.geoguessr.com##[class*="button"]:style(background-image: none !important)
+
+! No dark background on the left side of the homepage
+www.geoguessr.com##div[class*="signed-in-start-page_backgroundWrapper__"]
+
+! No avatar on the homepage
+www.geoguessr.com##[class*="signed-in-start-page_avatar__"]
+
+! No promo deals
+www.geoguessr.com##[class*="promo"]
+
+! No "free" tag on shop
+www.geoguessr.com##[class*="primary-menu_tagWrapper__"]
+
+! New compass less obtrusive background
+www.geoguessr.com##[class*="compassContainer"]:style(background-color: rgb(0 0 0 / 25%) !important)
+
+! No geoguessr logo
+www.geoguessr.com##img[alt="GeoGuessr"]
+
+! No google logo
+www.geoguessr.com##img[src*="google-logo"]
+
+! No zoom controls
+www.geoguessr.com##[class*="styles_controlGroup__"]
+www.geoguessr.com##[class*="guess-map_zoomControls__"]
+
+! No google copyright, shortcuts, etc.
+www.geoguessr.com##[class$="gmnoprint"]
+www.geoguessr.com##[class$="gm-style-cc"]
+
+! No friend chat
+www.geoguessr.com##[class*='friend-chat-in-game-button_root__']
+
+! No ads
+www.geoguessr.com##[class*="result-layout_adWrapper__"]
+
+! Map status bar redesign
+www.geoguessr.com##[class*="status_inner__"]:style(background-color: rgb(0 0 0 / 25%) !important; border-bottom-left-radius: 0.5rem !important; border-top-left-radius: 0.5rem !important)
+www.geoguessr.com##[class*="slanted-wrapper_variantPurple__"]:style(--variant-background-color: unset !important; --variant-box-shadow: unset !important)
+www.geoguessr.com##[class*="status_inner__"] > * [class*="status_label__"]:style(color: rgb(255 255 255 / 95%) !important)
+www.geoguessr.com##[class*="status_inner__"] > * [class*="status_value__"]:style(color: rgb(255 255 255 / 95%) !important)
+www.geoguessr.com##[class*="slanted-wrapper_withShadow"]:style(--variant-filter: drop-shadow(0 0.3rem 0.4rem rgba(0,0,0,.4)) !important)
+
+! Ongoing games: list redesign
+www.geoguessr.com##[class*="current_image__"] * [class*="styles_root__"]:style(border-radius: 100% !important)
+www.geoguessr.com##[class*="current_gameListItem"] > [class*="current_actions"]:style(flex-direction: row-reverse !important)
+
+! Faster map opening animation
+www.geoguessr.com##[data-qa='guess-map']:style(transition: opacity .04s ease, width .04s ease, height .04s ease !important)
+
+! Lower pin opacity on hover
+www.geoguessr.com##[class*="map-pin_mapPin"]:not([data-pano]):hover:style(opacity: 15%)
+
+! Profile dropdown item spacing
+www.geoguessr.com##[class*="profile_profileLink__"]:style(padding: .75rem !important)
+www.geoguessr.com##a[href*="signout"]:style(margin-top: 1rem)
