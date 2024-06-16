@@ -1,14 +1,33 @@
 ! Title: Alien's Geoguessr Filters
-! Description: Stuff I use to make the game look more pleasant.
+! Description: Tweaks to remove the bloat and make the game prettier.
 ! Expires: 4 days (update frequency)
-! Version: 27 April 2024
+! Version: 16 Jun 2024
 
-
-! More readable font
-www.geoguessr.com##*:style(font-weight: 400 !important)
 
 ! Underline links on hover
 www.geoguessr.com##a:hover:style(text-decoration: underline !important)
+
+! Hide avatars
+www.geoguessr.com##[class*="avatarWrapper"]
+www.geoguessr.com##[class*="animated-player-item_avatarContainer__"]
+www.geoguessr.com##[class*="profile-header_headerContent__"]:style(justify-content: space-between !important)
+
+! Hide coin count
+www.geoguessr.com##[data-qa="profile-coin-count"]
+
+! Hide trophies
+www.geoguessr.com##[class*="profile-feats_feats__"]
+www.geoguessr.com##[class*="profile-header_actions__"]:has(a[href*="avatar"])
+
+! Hide friend recommendations
+www.geoguessr.com##[class*="friend-list_friendsMeta"]
+www.geoguessr.com##[class*="friend-list_container__"]:style(padding: 0 !important)
+
+! Hide missions (yellow flag)
+www.geoguessr.com##[class*="header_context__"] > [class*="slanted-button_container__"]
+
+! Block music
+||www.geoguessr.com/_next/static/audio/$xhr,domain=www.geoguessr.com,important
 
 ! No italics
 www.geoguessr.com##*:style(font-style: normal !important)
@@ -28,45 +47,43 @@ www.geoguessr.com##[class*="map-card"] > *:style(transform: none !important)
 ! Transparent navigation buttons
 www.geoguessr.com##[class*="slanted-wrapper_variantGrayTransparent"]:style(--variant-background-color: none !important)
 
-! No loading animation
+! Hide loading animation
 www.geoguessr.com##[class*="fullscreen-spinner"]
 
-! No glint on buttons
+! Hide glint on buttons
 www.geoguessr.com##[class*="button"]:style(background-image: none !important)
 
-! No dark background on the left side of the homepage
+! Hide dark background on the homepage
 www.geoguessr.com##div[class*="signed-in-start-page_backgroundWrapper__"]
 
-! No avatar on the homepage
+! Hide avatar on the homepage
 www.geoguessr.com##[class*="signed-in-start-page_avatar__"]
 
-! No promo deals
+! Hide promo deals
 www.geoguessr.com##[class*="promo"]
 
-! No "free" tag on shop
+! Hide free tag
 www.geoguessr.com##[class*="primary-menu_tagWrapper__"]
 
 ! New compass less obtrusive background
 www.geoguessr.com##[class*="compassContainer"]:style(background-color: rgb(0 0 0 / 25%) !important)
 
-! No geoguessr logo
+! Hide geoguessr logo
 www.geoguessr.com##img[alt="GeoGuessr"]
 
-! No google logo
-www.geoguessr.com##img[src*="google-logo"]
-
-! No zoom controls
+! Hide zoom controls
 www.geoguessr.com##[class*="styles_controlGroup__"]
 www.geoguessr.com##[class*="guess-map_zoomControls__"]
 
-! No google copyright, shortcuts, etc.
+! Hide google copyright, shortcuts, etc.
 www.geoguessr.com##[class$="gmnoprint"]
 www.geoguessr.com##[class$="gm-style-cc"]
+www.geoguessr.com##img[src*="google-logo"]
 
-! No friend chat
+! Hide in-game friend chat
 www.geoguessr.com##[class*='friend-chat-in-game-button_root__']
 
-! No ads
+! Hide ads
 www.geoguessr.com##[class*="result-layout_adWrapper__"]
 
 ! Map status bar redesign
